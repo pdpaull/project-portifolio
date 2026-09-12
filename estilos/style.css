@@ -219,6 +219,19 @@ footer a:hover{
 
 
 @media screen and (min-width: 768px) {
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+  #ficha{
+    grid-column: 2/3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+
+  }
+  #detalhe{
+    grid-column: 3 / 4 ;
+  }
   #skill-conteiner{
     grid-template-columns: 1fr 1fr;
   }
@@ -231,7 +244,7 @@ footer a:hover{
   }
   .foto{
     aspect-ratio: 1/1;
-    max-width: 20%;
+    max-width: 100%;
     max-height: 200px;
   }
 }
