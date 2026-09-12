@@ -11,11 +11,21 @@
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
 }
+body.escuro{
+
+  --fundo-principal: #0a0a0a;
+  --texto: #dddddd;
+  --texto-inverso: #000000;
+  --destaque: #ff8800;
+  --destaque-inverso: #994400;
+  --fundo-card: #000000;
+}
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color .6s, color .6s;
 }
 header{
   background-color: var(--destaque);
@@ -245,6 +255,6 @@ footer a:hover{
   .foto{
     aspect-ratio: 1/1;
     max-width: 100%;
-    max-height: 200px;
+    max-height: 300px;
   }
 }
