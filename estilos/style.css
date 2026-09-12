@@ -99,7 +99,7 @@ article{
 }
 article h2{
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #video-conteiner{
   position: relative;
@@ -111,4 +111,68 @@ article h2{
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+#skill-conteiner{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nome{
+  font-weight: bold;
+  color: var(--texto);
+}
+.porcent{
+  font-weight: bold;
+  color: var(--destaque);
+}
+.barra{
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+.progresso{
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+#forma-conteiner{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+.curso{
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width .5s , border-color .5s;
+}
+.curso:hover{
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+.curso p {
+  margin: 5px 0px;
+}
+.periodo{
+  font-size: .8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+.institu{
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 768px) {
+  #skill-conteiner{
+    grid-template-columns: 1fr 1fr;
+  }
 }
